@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  /* 
+  Utilizei para definir que não quero que o site comece mais abaixo, e sim desde o começo, por isso defini 0 no margin e no padding e adicionei uma fonte para todo site, que seria o Poppins.
+  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+/*usei para deixar o scroll mais suave*/
+  html {
+    scroll-behavior: smooth;
+
+}
+
+ /* 
+Mudança de cor grandiente para o fundo da página em RGBA
+*/
+body{
+    background: linear-gradient(
+        90deg,
+        rgba(12, 31, 54) 0%,
+        rgb(1, 30, 65) 45%,
+        rgb(12, 31, 54) 100%
+
+      );
+
+}
+
+  /* 
+  Utilizei para estilizar a tag a, coloquei a cor branca, tirei a linha do texto e defini uma transition para 0.3 segundos.
+  */
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  /* 
+  Utilizei para dar uma opacidade quando passa o mouse em cima.
+  */
+  li a:hover {
+    opacity: 0.6;
+  }
+  
+  /* 
+  Utilizei para dar um espaçamento entre as letras da logo.
+  */
+  .logo {
+    letter-spacing: 4px;
+  }
+ 
+  /* 
+  Utilizei para arrumar a posição e a cor da barra do header.
+  */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #29963b;
+    height: 8vh;
+  }
+  
+  /* 
+  Utilizei para remover algumas, como por exemplo as bolinhas que ficam antes de cada texto da lista e deixar lado-a-lado.
+  */
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+
+  
+  /* 
+  Utilizei para passa um pouco para o lado e dei 3 pixeils de distância entre as letras.
+  */
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  /* 
+  Utilizei somente para definir o tamanho do container que engloba as outras divs
+  */
+  .container {
+    width: 100%;
+    height: 900px;
+  }
+  /* 
+  Utilizei somente para definir o tamanho do container que engloba metade da tela. (esquerda)
+  */
+  .container1 {
+    width: 50%;
+    height: 900px;
+    display: inline-block;
+
+  }
+
+  /* 
+  Utilizei somente para definir o tamanho do container que engloba metade da tela. (direita)
+  */
+  .container2 {
+    float: right;
+    width: 50%;
+    height: 900px;
+    display: inline-block;
+ 
+  }
+
+  /*
+  Container para englobar tudo
+  */
+
+  .container3 {
+    width: 50%;
+    height: 900px;
+
+  }
+  
+  /*
+  Dimensionamento da imagem e posicionamento.
+  */
+.personagem img{
+
+    margin-top: 15%;
+    margin-left: 32%;
+    height: 700px;
+
+  }
+  
+  /*
+  Animação do personagem
+  */
+  .personagem img {
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-35px);
+    }
+  }
+
+  /*
+  Utilizei para funcionar a animação em outros navegadores 
+  */
+  .logo img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+
+  /* 
+    peguei o efeito desse site: https://freefrontend.com/css-typing-text/
+    Mudei pouca coisa, só tirei o grid e aumentei o número de caracteres da frase.
+  */
+  .typing-demo {
+    width: 26ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4em;
+    color: white;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .typing-demo {
+
+    margin-top: 20rem;
+    margin-left: 4rem;
+
+  }
+
+  /* Fiz junto com esse cara: https://www.youtube.com/watch?v=2umsItNQ9mI
+     Não mudei muita coisa além da cor do fundo, adicionei 2 spans e coloquei em inglês e adicionei 1 rem de margin.
+  */
+.container5 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+/*
+Peguei a parte do formulário de um video: https://www.youtube.com/watch?v=2umsItNQ9mI
+Fiz algumas mudanças para ficar do jeito que eu desejava
+*/
+h1, h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h1#contato::before {
+  content: "📧";
+  display: block;
+}
+
+  /*
+  Dimensionamento 
+  */
+.form {
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+  /*
+  Dimensionamento, cor e espaçamento da linha
+  */
+.form label {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #09d;
+  box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: #9932CC;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+  /*
+  Ao passar o mouse
+  */
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: #8630b1;
+}
+
+  /*
+  cor do span
+  */
+span {
+    color: #0288D1;
+}
+  /*
+  Dimensionamento
+  */
+.form button { 
+
+    margin-left: 1rem;
+
+}
+
+/*
+Utilize para posicionar o texto
+*/
+.skills{
+  position: absolute;
+  left: 43%;
+}
+
+/*
+Utilize para posicionar o texto
+*/
+.construcao {
+  position: absolute;
+  top: 85rem;
+  left: 25%;
+}
