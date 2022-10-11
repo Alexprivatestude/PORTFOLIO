@@ -18,7 +18,6 @@ O projeto está bem simples, é somente para uso próprio. Temos uma guia de nav
 Para esse site, decidi deixar num tema um pouco mais futuristico, então utilizei as cores:
 
 Plano de fundo:<br>
-<br>
 rgba(12, 31, 54) 0%,<br>
 rgb(1, 30, 65) 45%,<br>
 rgb(12, 31, 54) 100%
