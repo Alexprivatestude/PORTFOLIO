@@ -6,7 +6,7 @@ FEITO POR ALEXSANDRO FERNANDES NASCIMENTO
 
 O site foi feito para ser um portfolio de mim como desenvolvedor.  
 
-Tive algumas dificuldade para aprender e entender o HTML e o CSS, mas futuramente pretendo adicionar JavaScript.
+Tive algumas dificuldade para aprender e entender o <b>HTML</b> e o <b>CSS</b>, mas futuramente pretendo adicionar <b>JavaScript</b>.
 
 <h1 align="center">Uso do projeto</h1>
 
